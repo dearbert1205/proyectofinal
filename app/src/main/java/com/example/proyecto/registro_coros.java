@@ -24,7 +24,21 @@ import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
+public class registro_coros extends AppCompatActivity {
+    private AsyncHttpClient clientec = new AsyncHttpClient();
+    private ListView lvdatosc;
+    EditText buscar;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registro_coros);
 
+        lvdatosc = findViewById(R.id.lvDatosRc);
+        buscar = findViewById(R.id.buscarc);
+        clientec = new AsyncHttpClient();
+
+
+        obtenerCoros();
     }
 
     private void obtenerCoros(){
