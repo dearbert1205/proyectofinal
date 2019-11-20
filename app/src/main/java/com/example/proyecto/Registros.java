@@ -14,7 +14,9 @@ public class Registros extends AppCompatActivity {
         setContentView(R.layout.activity_registros);
     }
 
-
+    public void rA(View view) {
+        Intent intent = new Intent(Registros.this, AlabanzasActivity.class);
+        Registros.this.startActivity(intent);
     }
 
     public void rC(View view) {
