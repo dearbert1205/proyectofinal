@@ -54,14 +54,6 @@ public class CorosActivity extends AppCompatActivity {
                 }else  if (etletrac.getText().toString().length()== 0){
                     etletrac.setError("Campo Obligatorio");
                 }else{
-                    Coros a = new Coros();
-                    a.setTitulo(ettituloc.getText().toString().replaceAll(" ", "%20"));
-                    a.setAutor(etautorc.getText().toString().replaceAll(" ", "%20"));
-                    a.setLetra(etletrac.getText().toString().replaceAll(" ", "%20"));
-
-                    agregarCoros(a);
-
-                    //obtenerAlabanzas();
                 }
             }
         });
