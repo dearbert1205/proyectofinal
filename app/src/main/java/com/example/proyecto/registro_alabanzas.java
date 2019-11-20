@@ -109,15 +109,7 @@ public class registro_alabanzas extends AppCompatActivity {
 
                     cliente.post(url, new AsyncHttpResponseHandler() {
                         @Override
-                        public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                            if (statusCode == 200){
-                                Toast.makeText(registro_alabanzas.this, "Alabanza liminada Correctamente", Toast.LENGTH_SHORT).show();
-                                try {
-                                    Thread.sleep(1000);
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                                obtenerAlabanzas();
+
                             }
                         }
 
