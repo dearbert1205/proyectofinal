@@ -47,14 +47,7 @@ public class registro_alabanzas extends AppCompatActivity {
 
     }
 
-    private void obtenerAlabanzas(){
-        String url = "https://proyectoandroidstudio.000webhostapp.com/obtenerDatos.php";
-        cliente.post(url, new AsyncHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                if (statusCode == 200){
-                    listarAlabanzas(new String(responseBody));
-                }
+
             }
 
             @Override
