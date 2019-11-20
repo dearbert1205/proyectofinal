@@ -131,7 +131,11 @@ public class registro_coros extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Coros a = (Coros) parent.getItemAtPosition(position);
 
-
+                    AlertDialog.Builder al = new AlertDialog.Builder(registro_coros.this);
+                    al.setCancelable(true);
+                    al.setTitle("Descripción Coro");
+                    al.setMessage(a.tostring());
+                    al.show();
                 }
             });
 
