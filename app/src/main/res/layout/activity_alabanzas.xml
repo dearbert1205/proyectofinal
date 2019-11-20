@@ -37,7 +37,14 @@
         android:layout_marginTop="20dp"
         />
 
-
+        <EditText
+            android:id="@+id/etautor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Autor"
+            android:layout_marginTop="10dp"
+            android:inputType="text"/>
 
         <EditText
             android:id="@+id/etletra"
