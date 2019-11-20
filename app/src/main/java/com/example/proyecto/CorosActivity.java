@@ -73,7 +73,15 @@ public class CorosActivity extends AppCompatActivity {
         String parametros = "titulo="+a.getTitulo()+"&autor="+a.getAutor()+"&letra="+a.getLetra();
         clientec.post(url + parametros, new AsyncHttpResponseHandler() {
             @Override
-
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                if (statusCode == 200){
+                    Toast.makeText(CorosActivity.this, "Coro agregado correctamente", Toast.LENGTH_SHORT).show();
+                    ettituloc.setText("");
+                    etautorc.setText("");
+                    etletrac.setText("");
+                }else if (statusCode != 200){
+                    Toast.makeText(CorosActivity.this, "Coro no se pudo agregar", Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
