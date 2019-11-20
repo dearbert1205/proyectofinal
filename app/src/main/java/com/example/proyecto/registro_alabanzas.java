@@ -67,15 +67,7 @@ public class registro_alabanzas extends AppCompatActivity {
     private  void listarAlabanzas(String respuesta){
         final ArrayList<Alabanzas> lista = new ArrayList<Alabanzas>();
         try{
-            JSONArray jsonArreglo = new JSONArray(respuesta);
-            for (int i=0; i<jsonArreglo.length(); i++){
-                Alabanzas a = new Alabanzas();
-                a.setId(jsonArreglo.getJSONObject(i).getInt("id_a"));
-                a.setTitulo(jsonArreglo.getJSONObject(i).getString("titulo"));
-                a.setAutor(jsonArreglo.getJSONObject(i).getString("autor"));
-                a.setLetra(jsonArreglo.getJSONObject(i).getString("letra"));
 
-                lista.add(a);
 
             }
 
