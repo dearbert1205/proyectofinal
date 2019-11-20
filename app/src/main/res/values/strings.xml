@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proyecto Final</string>
+    <string name="item_Registrar">Registrar</string>
+    <string name="item_Alabanzas">Alabanzas</string>
+    <string name="item_Coros">Coros</string>
+
+</resources>
