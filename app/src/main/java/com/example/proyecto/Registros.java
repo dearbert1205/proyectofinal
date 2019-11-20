@@ -19,6 +19,8 @@ public class Registros extends AppCompatActivity {
         Registros.this.startActivity(intent);
     }
 
-
+    public void rC(View view) {
+        Intent intent = new Intent(Registros.this, CorosActivity.class);
+        Registros.this.startActivity(intent);
     }
 }
