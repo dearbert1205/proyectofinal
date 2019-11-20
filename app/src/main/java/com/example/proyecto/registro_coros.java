@@ -41,7 +41,20 @@ public class registro_coros extends AppCompatActivity {
         obtenerCoros();
     }
 
+    private void obtenerCoros(){
+        String url = "https://proyectoandroidstudio.000webhostapp.com/obtenerDatosCoro.php";
+        clientec.post(url, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                if (statusCode == 200){
+                    listarCoros(new String(responseBody));
+                }
+            }
 
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
+            }
         });
     }
 
