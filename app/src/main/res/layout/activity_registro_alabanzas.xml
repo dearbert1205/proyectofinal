@@ -7,11 +7,7 @@
     tools:context=".registro_alabanzas"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/buscar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Buscar"/>
+
 
     <ListView
         android:id="@+id/lvDatosRa"
