@@ -18,5 +18,8 @@ public class Listados extends AppCompatActivity {
         Listados.this.startActivity(intent);
     }
 
-
+    public void lc(View view) {
+        Intent intent = new Intent(Listados.this, registro_coros.class);
+        Listados.this.startActivity(intent);
+    }
 }
