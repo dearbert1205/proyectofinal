@@ -29,7 +29,9 @@ public class CorosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coros);
 
-
+        ettituloc = findViewById(R.id.ettituloc);
+        etautorc = findViewById(R.id.etautorc);
+        etletrac = findViewById(R.id.etletrac);
 
         btnRegistrarc = findViewById(R.id.btnRegistrarC);
 
