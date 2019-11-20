@@ -9,9 +9,7 @@ import android.view.View;
 public class Listados extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listados);
+
     }
 
     public void la(View view) { Intent intent = new Intent(Listados.this, registro_alabanzas.class);
