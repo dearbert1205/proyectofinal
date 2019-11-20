@@ -84,10 +84,7 @@ public class registro_coros extends AppCompatActivity {
 
                 }
 
-                @Override
-                public void onTextChanged(CharSequence s, int start, int before, int count) {
-                    a.getFilter().filter(s);
-                }
+
 
                 @Override
                 public void afterTextChanged(Editable s) {
