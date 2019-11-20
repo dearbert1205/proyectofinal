@@ -117,7 +117,6 @@ public class registro_coros extends AppCompatActivity {
                         }
 
                         @Override
-                        public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
 
                         }
                     });
