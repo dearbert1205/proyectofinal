@@ -54,8 +54,6 @@ public class Coros {
     }
 
     public  String tostring(){
-        return "TÍTULO: " + titulo + "\n"+
-                "AUTOR: " + autor + "\n\n"+
-                "LETRA: " +  "\n" + letra ;
+
     }
 }
