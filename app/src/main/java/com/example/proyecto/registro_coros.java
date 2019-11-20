@@ -89,10 +89,7 @@ public class registro_coros extends AppCompatActivity {
                     a.getFilter().filter(s);
                 }
 
-                @Override
-                public void afterTextChanged(Editable s) {
 
-                }
             });
 
             lvdatosc.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
