@@ -58,7 +58,7 @@ public class registro_alabanzas extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+
 
             }
         });
