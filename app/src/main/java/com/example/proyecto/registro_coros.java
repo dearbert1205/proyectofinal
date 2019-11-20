@@ -89,7 +89,10 @@ public class registro_coros extends AppCompatActivity {
                     a.getFilter().filter(s);
                 }
 
+                @Override
+                public void afterTextChanged(Editable s) {
 
+                }
             });
 
             lvdatosc.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -101,17 +104,7 @@ public class registro_coros extends AppCompatActivity {
 
                     clientec.post(url, new AsyncHttpResponseHandler() {
                         @Override
-                        public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                            if (statusCode == 200){
-                                Toast.makeText(registro_coros.this, "Coro liminado Correctamente", Toast.LENGTH_SHORT).show();
-                                try {
-                                    Thread.sleep(1000);
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                                obtenerCoros();
-                            }
-                        }
+
 
                         @Override
                         public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
